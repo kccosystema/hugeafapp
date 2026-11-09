@@ -1,0 +1,64 @@
+.programs { background: var(--bg); }
+
+.pg-head { padding: 20px 18px 4px; }
+.pg-title {
+  font-family: var(--font-display);
+  font-weight: 900; font-size: 34px; text-transform: uppercase;
+  color: #fff; margin: 0;
+}
+.pg-sub { font-weight: 500; font-size: 14px; color: var(--text-dim); margin: 4px 0 0; }
+
+/* your programs */
+.pg-mine { padding: 0 18px; display: flex; flex-direction: column; gap: 12px; }
+.pg-active-card {
+  display: flex; gap: 14px; align-items: center;
+  background: var(--surface);
+  border: 1px solid var(--line-soft);
+  border-radius: 16px;
+  padding: 12px;
+  text-align: left;
+}
+.pg-active-media { position: relative; flex: 0 0 92px; height: 72px; border-radius: 12px; overflow: hidden; }
+.pg-active-media img { width: 100%; height: 100%; object-fit: cover; }
+.pg-active-badge {
+  position: absolute; top: 6px; left: 6px;
+  background: rgba(0,0,0,.6); backdrop-filter: blur(3px);
+  color: #fff; font-weight: 700; font-size: 8.5px; letter-spacing: .03em;
+  padding: 3px 6px; border-radius: 6px;
+}
+.pg-active-body { flex: 1; min-width: 0; }
+.pg-active-name { font-weight: 800; font-size: 16px; color: #fff; }
+.pg-bar { height: 6px; border-radius: 4px; background: #2A2733; margin: 9px 0 6px; overflow: hidden; }
+.pg-bar-fill { height: 100%; background: var(--accent); border-radius: 4px; }
+.pg-active-meta { font-weight: 600; font-size: 12px; color: var(--text-dim); }
+
+/* browse */
+.pg-browse { padding: 0 18px 8px; display: flex; flex-direction: column; gap: 14px; }
+.pg-card {
+  background: var(--surface);
+  border: 1px solid var(--line-soft);
+  border-radius: 18px;
+  overflow: hidden;
+  text-align: left;
+  padding: 0;
+}
+.pg-card-media { position: relative; height: 150px; }
+.pg-card-media img { width: 100%; height: 100%; object-fit: cover; object-position: center 25%; }
+.pg-card-scrim { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(11,10,13,.15), rgba(11,10,13,.9)); }
+.pg-card-tag {
+  position: absolute; top: 12px; left: 12px;
+  background: var(--accent); color: #fff;
+  font-weight: 800; font-size: 10px; letter-spacing: .03em;
+  padding: 5px 9px; border-radius: 7px;
+}
+.pg-card-title {
+  position: absolute; left: 14px; bottom: 12px;
+  font-family: var(--font-display);
+  font-weight: 900; font-size: 26px; text-transform: uppercase;
+  color: #fff; line-height: 1;
+}
+.pg-card-body { padding: 13px 14px 15px; }
+.pg-card-summary { font-weight: 500; font-size: 13px; line-height: 1.45; color: var(--text-dim); margin: 0; }
+.pg-card-stats { display: flex; gap: 14px; margin-top: 11px; }
+.pg-card-stats span { font-weight: 700; font-size: 12px; color: var(--text-dim); }
+.pg-card-stats .accent { color: var(--accent); }

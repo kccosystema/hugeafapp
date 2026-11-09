@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="112" fill="#0B0A0D"/>
+  <g font-family="'Saira Condensed','Arial Narrow',sans-serif" font-weight="900" text-anchor="middle">
+    <text x="256" y="250" font-size="150" fill="#FFFFFF" letter-spacing="2">HUGE</text>
+    <text x="256" y="380" font-size="150" fill="#DA2A24" letter-spacing="6">AF</text>
+  </g>
+</svg>

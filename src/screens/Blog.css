@@ -1,0 +1,47 @@
+.blog { background: var(--bg); }
+.px { padding: 0 18px; }
+
+.bl-bar { display: flex; align-items: center; justify-content: space-between; padding: 8px 16px; }
+.bl-back { width: 34px; height: 34px; border-radius: 50%; background: var(--surface); color: #fff; border: none; font-size: 18px; }
+.bl-bar-title { font-weight: 700; font-size: 13px; color: var(--text-dim); }
+
+.bl-head { padding: 8px 18px 0; }
+.bl-title { font-family: var(--font-display); font-weight: 900; font-size: 34px; text-transform: uppercase; color: #fff; margin: 0; }
+
+.bl-chips { display: flex; gap: 8px; overflow-x: auto; padding: 14px 18px 4px; }
+.bl-chip {
+  flex: 0 0 auto;
+  background: var(--surface); border: none;
+  color: #cfc9d6; font-weight: 700; font-size: 12px;
+  padding: 9px 15px; border-radius: 30px; white-space: nowrap;
+}
+.bl-chip.on { background: var(--accent); color: #fff; font-weight: 800; }
+
+.bl-cat { font-weight: 800; font-size: 11px; letter-spacing: .03em; color: var(--accent); }
+
+/* featured */
+.bl-featured {
+  position: relative; width: 100%; height: 260px;
+  margin-top: 14px; border-radius: 20px; overflow: hidden;
+  border: none; padding: 0; text-align: left;
+}
+.bl-featured img { width: 100%; height: 100%; object-fit: cover; object-position: center 20%; }
+.bl-featured-scrim { position: absolute; inset: 0; background: linear-gradient(180deg, transparent 35%, rgba(11,10,13,.95)); }
+.bl-featured-badge {
+  position: absolute; top: 12px; left: 12px;
+  background: var(--accent); color: #fff;
+  font-weight: 800; font-size: 10px; letter-spacing: .04em;
+  padding: 5px 10px; border-radius: 7px;
+}
+.bl-featured-body { position: absolute; left: 14px; right: 14px; bottom: 14px; }
+.bl-featured-title { font-family: var(--font-display); font-weight: 900; font-size: 24px; line-height: 1.05; text-transform: uppercase; color: #fff; margin: 5px 0 6px; }
+.bl-featured-meta { font-weight: 600; font-size: 12px; color: #cfc9d6; }
+
+/* list */
+.bl-list { padding: 18px; display: flex; flex-direction: column; gap: 16px; }
+.bl-row { display: flex; gap: 13px; align-items: center; background: none; border: none; padding: 0; text-align: left; }
+.bl-row-img { flex: 0 0 88px; width: 88px; height: 88px; border-radius: 14px; object-fit: cover; object-position: center 18%; }
+.bl-row-meta { flex: 1; min-width: 0; }
+.bl-row-title { font-weight: 800; font-size: 15px; line-height: 1.2; color: #fff; margin: 4px 0 5px; }
+.bl-row-read { font-weight: 600; font-size: 12px; color: var(--text-dim); }
+.bl-empty { text-align: center; color: var(--text-dim); padding: 30px; font-weight: 600; }

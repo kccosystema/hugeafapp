@@ -1,0 +1,121 @@
+:root {
+  /* HugeAF dark brand */
+  --bg: #0B0A0D;
+  --surface: #18161C;
+  --surface-2: #222028;
+  --line: rgba(255, 255, 255, 0.07);
+  --line-soft: rgba(255, 255, 255, 0.05);
+  --text: #ffffff;
+  --text-dim: #8a8698;
+  --text-faint: #6f6c77;
+  --accent: #DA2A24;
+  --accent-soft: #FF7A6B;
+  --accent-tint: #2A0D0B;
+  --nav-h: 82px;
+
+  --font-display: 'Saira Condensed', system-ui, sans-serif;
+  --font-body: 'Archivo', system-ui, sans-serif;
+}
+
+* { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+
+html, body, #root { height: 100%; }
+
+body {
+  margin: 0;
+  background: #000;
+  color: var(--text);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* App is a centered phone-width column; fills the viewport on mobile */
+#root {
+  max-width: 440px;
+  margin: 0 auto;
+  background: var(--bg);
+  min-height: 100%;
+  position: relative;
+  overflow-x: hidden;
+}
+
+button { font-family: inherit; cursor: pointer; }
+a { color: inherit; text-decoration: none; }
+img { display: block; }
+
+/* hide scrollbars on horizontal carousels */
+.scrl::-webkit-scrollbar { display: none; }
+.scrl { scrollbar-width: none; }
+
+.h-display {
+  font-family: var(--font-display);
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+}
+
+/* page scroll area sits above the fixed bottom nav */
+.page {
+  min-height: 100vh;
+  padding-bottom: calc(var(--nav-h) + env(safe-area-inset-bottom));
+}
+
+.section-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 26px 18px 12px;
+}
+.section-title {
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-size: 22px;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  color: var(--text);
+}
+.section-link {
+  font-weight: 700;
+  font-size: 13px;
+  color: var(--accent);
+  background: none;
+  border: none;
+}
+
+.row-scroll {
+  display: flex;
+  gap: 14px;
+  overflow-x: auto;
+  padding: 0 18px 4px;
+}
+
+@keyframes fadeup {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.fadeup { animation: fadeup 0.28s ease both; }
+
+/* auth splash */
+.app-splash {
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg);
+}
+.app-splash-logo {
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-size: 40px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #fff;
+  animation: splashPulse 1.2s ease-in-out infinite;
+}
+.app-splash-logo span { color: var(--accent); }
+@keyframes splashPulse {
+  0%, 100% { opacity: 0.55; }
+  50% { opacity: 1; }
+}

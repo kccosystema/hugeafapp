@@ -1,0 +1,52 @@
+.chd { background: var(--bg); }
+.chd-bar { padding: 8px 16px; }
+.chd-back { width: 34px; height: 34px; border-radius: 50%; background: var(--surface); color: #fff; border: none; font-size: 18px; }
+.chd-back.floating { position: absolute; top: 14px; left: 16px; z-index: 3; background: rgba(0,0,0,.45); backdrop-filter: blur(6px); }
+.chd-msg { text-align: center; color: var(--text-dim); padding: 60px 20px; font-weight: 600; }
+
+.chd-hero { position: relative; height: 230px; }
+.chd-hero-img { width: 100%; height: 100%; object-fit: cover; object-position: center 22%; }
+.chd-hero-scrim { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(11,10,13,.3) 0%, rgba(11,10,13,.15) 40%, rgba(11,10,13,.98) 100%); }
+.chd-hero-body { position: absolute; left: 0; right: 0; bottom: 0; padding: 18px; }
+.chd-tag { background: var(--accent); color: #fff; font-weight: 800; font-size: 10px; letter-spacing: .04em; padding: 5px 9px; border-radius: 7px; }
+.chd-title { font-family: var(--font-display); font-weight: 900; font-size: 34px; line-height: 0.98; text-transform: uppercase; color: #fff; margin: 10px 0 0; }
+.chd-participants { font-weight: 600; font-size: 13px; color: #cfc9d6; margin-top: 5px; }
+
+.chd-body { padding: 20px 18px; }
+
+/* progress ring */
+.chd-ring-wrap { position: relative; width: 132px; height: 132px; margin: 4px auto 0; }
+.chd-ring { display: block; }
+.chd-ring circle:last-child { transition: stroke-dashoffset 0.5s cubic-bezier(0.2,0.8,0.2,1); }
+.chd-ring-center { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+.chd-ring-value { font-family: var(--font-display); font-weight: 900; font-size: 30px; color: #fff; line-height: 1; }
+.chd-ring-value span { font-size: 16px; color: var(--text-dim); }
+.chd-ring-unit { font-weight: 600; font-size: 11px; color: var(--text-dim); text-transform: uppercase; letter-spacing: .04em; margin-top: 3px; }
+
+.chd-daysleft { text-align: center; font-weight: 700; font-size: 13px; color: var(--accent-soft); margin-top: 12px; }
+
+.chd-summary { font-weight: 500; font-size: 14px; line-height: 1.5; color: var(--text-dim); text-align: center; margin: 18px 4px 20px; }
+
+.chd-primary {
+  width: 100%; border: none; background: var(--accent); color: #fff;
+  font-weight: 800; font-size: 16px; padding: 16px; border-radius: 14px;
+  box-shadow: 0 8px 22px rgba(218,42,36,.45);
+}
+.chd-primary:disabled { background: var(--surface); color: var(--text-dim); box-shadow: none; }
+.chd-primary.compact { width: auto; padding: 14px 20px; box-shadow: none; }
+
+.chd-count-row { display: flex; gap: 10px; }
+.chd-count-input {
+  flex: 1; background: var(--surface); border: 1px solid rgba(255,255,255,.08);
+  border-radius: 14px; padding: 15px; color: #fff; font-family: var(--font-body);
+  font-weight: 700; font-size: 15px; outline: none; -moz-appearance: textfield;
+}
+.chd-count-input::-webkit-outer-spin-button, .chd-count-input::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
+.chd-count-input:focus { border-color: rgba(218,42,36,.5); }
+
+.chd-note { text-align: center; font-weight: 600; font-size: 12px; color: var(--text-faint); margin-top: 12px; }
+
+.chd-leave {
+  display: block; margin: 20px auto 0; background: none; border: none;
+  color: var(--text-faint); font-weight: 700; font-size: 13px; text-decoration: underline;
+}

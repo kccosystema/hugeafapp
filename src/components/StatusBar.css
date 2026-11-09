@@ -1,0 +1,6 @@
+/* Invisible spacer that reserves the device notch / status-bar height.
+   0px in a normal browser; the real inset on a notched device. */
+.status-spacer {
+  flex: none;
+  height: env(safe-area-inset-top, 0px);
+}

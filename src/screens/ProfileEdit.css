@@ -1,0 +1,3 @@
+/* Profile editor reuses onboarding field styles (Onboarding.css). This just
+   tweaks the header spacing so the top bar reads as an edit bar, not a step. */
+.ob .ob-step { font-family: var(--font-display); font-weight: 900; font-size: 16px; text-transform: uppercase; color: #fff; letter-spacing: .01em; }
